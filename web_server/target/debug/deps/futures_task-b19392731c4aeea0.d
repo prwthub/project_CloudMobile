@@ -1,0 +1,11 @@
+c:\xampp\htdocs\project_CloudMobile\web_server\target\debug\deps\futures_task-b19392731c4aeea0.rmeta: C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\lib.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\spawn.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\arc_wake.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker_ref.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\future_obj.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\noop_waker.rs
+
+c:\xampp\htdocs\project_CloudMobile\web_server\target\debug\deps\futures_task-b19392731c4aeea0.d: C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\lib.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\spawn.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\arc_wake.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker_ref.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\future_obj.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\noop_waker.rs
+
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\lib.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\spawn.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\arc_wake.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\waker_ref.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\future_obj.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.27\src\noop_waker.rs:
