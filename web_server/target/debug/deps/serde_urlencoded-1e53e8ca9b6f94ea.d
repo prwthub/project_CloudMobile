@@ -1,0 +1,11 @@
+c:\xampp\htdocs\project_CloudMobile\web_server\target\debug\deps\serde_urlencoded-1e53e8ca9b6f94ea.rmeta: C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs
+
+c:\xampp\htdocs\project_CloudMobile\web_server\target\debug\deps\serde_urlencoded-1e53e8ca9b6f94ea.d: C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs
+
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\lib.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\de.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\mod.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\key.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\pair.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\part.rs:
+C:\Users\Perawit\.cargo\registry\src\github.com-1ecc6299db9ec823\serde_urlencoded-0.7.1\src\ser\value.rs:
