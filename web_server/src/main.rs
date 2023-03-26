@@ -2,11 +2,14 @@ use actix_web::{App, HttpServer};
 //use serde::Deserialize;
 
 pub mod routes;
-use crate::routes::{register_routes, login_routes, grade_routes, management_routes};
-use crate::routes::{studentmanagement_routes, studentmanagement_update_routes, studentmanagement_delete_routes};
-use crate::routes::{teacher_routes, teacher_update_routes, teacher_assign_routes};
+use crate::routes::*;
+// use crate::routes::{register_routes, login_routes, grade_routes, management_routes};
+// use crate::routes::{studentmanagement_routes, studentmanagement_update_routes, studentmanagement_delete_routes};
+// use crate::routes::{teacher_routes, teacher_update_routes, teacher_assign_routes};
 
 mod handlers;
+
+mod models;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
