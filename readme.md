@@ -20,3 +20,26 @@ apiary : (https://kmutnbgrade.docs.apiary.io/)
 ![Alt text](./apiary.png)
 
 #
+
+path
+
+> /register
+
+> /login
+
+> /grade
+
+> /management
+
+> /studentmanagement
+
+> /studentmanagement/update
+
+> /studentmanagement/delete
+
+> /teacher
+
+> /teacher/assign
+
+> /teacher/update
+#
