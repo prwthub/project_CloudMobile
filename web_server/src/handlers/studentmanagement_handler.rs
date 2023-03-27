@@ -70,7 +70,7 @@ async fn get_studentmanagement() -> impl Responder {
             }
         ];
         let user_response = json!(userlist);
-        HttpResponse::Ok().json(user_response)
+        HttpResponse::Ok().json(user_response) // ถ้าตัวนี้จะเป็น Status Code 200
         //let response_body = json!(combined_response);
         //HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
     

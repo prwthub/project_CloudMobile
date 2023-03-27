@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "46f4d780-51bd-46f1-b285-dbdf14129258",
+		"name": "university",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/register 201",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master\":{\r\n        \"master_name\": \"prayut\",\r\n        \"master_surname\": \"rod o cha\",\r\n        \"master_role\": \"admin\"\r\n    },\r\n    \"user\":{\r\n        \"user_name\" : \"perawit\",\r\n        \"user_surname\" : \"anansukatham\",\r\n        \"user_id\": \"6303051613050\",\r\n        \"user_password\": \"perawit007\",\r\n        \"user_role\" : \"student\",\r\n        \"user_status\" : \"enrolled\",\r\n        \"user_year\" : 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/register 403",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master\":{\r\n        \"master_name\": \"prayut\",\r\n        \"master_surname\": \"rod o cha\",\r\n        \"master_role\": \"teacher\"\r\n    },\r\n    \"user\":{\r\n        \"user_name\" : \"perawit\",\r\n        \"user_surname\" : \"anansukatham\",\r\n        \"user_id\": \"6303051613050\",\r\n        \"user_password\": \"perawit007\",\r\n        \"user_role\" : \"student\",\r\n        \"user_status\" : \"enrolled\",\r\n        \"user_year\" : 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login 201",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"6303051613050\",\r\n    \"user_password\": \"perawit007\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login 401",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"6303051613050d\",\r\n    \"user_password\": \"perawit007\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grade 201,403",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/grade",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/teacher 200,403",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/teacher",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/teacher/assign 201",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master\":{\r\n        \"master_name\": \"prayut\",\r\n        \"master_surname\": \"rod o cha\",\r\n        \"master_role\": \"teacher\"\r\n    },\r\n\r\n    \"user_id\": \"6303051613050\",\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \r\n    \"subjects\":{\r\n        \"python\": \"A\",\r\n        \"java\": \"A\",\r\n        \"matlab\": \"A\",\r\n        \"rust\": \"A\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/teacher/assign",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"assign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/teacher/assign 403",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master\":{\r\n        \"master_name\": \"prayut\",\r\n        \"master_surname\": \"rod o cha\",\r\n        \"master_role\": \"admin\"\r\n    },\r\n\r\n    \"user_id\": \"6303051613050\",\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \r\n    \"subjects\":{\r\n        \"python\": \"A\",\r\n        \"java\": \"A\",\r\n        \"matlab\": \"A\",\r\n        \"rust\": \"A\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/teacher/assign",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"assign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/teacher/update 201",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"teacher\",\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \"user_id\": \"6303051613050\",\r\n\r\n    \"subject\": {\r\n        \"python\":\"A+\",\r\n        \"java\": \"A+\",\r\n        \"matlab\": \"A+\",\r\n        \"rust\": \"A+\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/teacher/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/teacher/update 403",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"admin\",\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \"user_id\": \"6303051613050\",\r\n\r\n    \"subject\": {\r\n        \"python\":\"A+\",\r\n        \"java\": \"A+\",\r\n        \"matlab\": \"A+\",\r\n        \"rust\": \"A+\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/teacher/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"teacher",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/management 201,403",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/management",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/studentmanagement 200,403",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/studentmanagement",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"studentmanagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/studentmanagement/update 201",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"teacher\",\r\n\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \"user_id\": \"6303051613050\",\r\n    \"user_status\": \"graduted\",\r\n    \"user_year\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/studentmanagement/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"studentmanagement",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/studentmanagement/update 403",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"admin\",\r\n\r\n    \"user_name\": \"perawit\",\r\n    \"user_surname\": \"anansukatham\",\r\n    \"user_id\": \"6303051613050\",\r\n    \"user_status\": \"graduted\",\r\n    \"user_year\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/studentmanagement/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"studentmanagement",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/studentmanagement/delete 201",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"admin\",\r\n    \"user_id\": \"6303051613050\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/studentmanagement/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"studentmanagement",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/studentmanagement/delete 403",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"master_role\": \"teacher\",\r\n    \"user_id\": \"6303051613050\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/studentmanagement/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"studentmanagement",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
