@@ -51,7 +51,7 @@ async fn post_register(input_data: web::Json<register_request>) -> impl Responde
             },
         };
         let response_body = json!(combined_response);
-        HttpResponse::Unauthorized().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 401
+        HttpResponse::Forbidden().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 403
     }
     else{
         let combined_response = register_response {
