@@ -16,6 +16,11 @@ pub struct register_response {
     status: status,
 }
 
+#[derive(Serialize, Deserialize)]
+pub struct register_response_fail {
+    status: status,
+}
+
 // register [post]
 // (/register)
 #[post("/register")] 
@@ -38,16 +43,7 @@ async fn post_register(input_data: web::Json<register_request>) -> impl Responde
 
 
     if master_role != "admin" {
-        let combined_response = register_response {
-            user: user { 
-                user_name: "".to_string(), 
-                user_surname: "".to_string(), 
-                user_id: "".to_string(), 
-                user_password: "".to_string(), 
-                user_role: "".to_string(),
-                user_status: "".to_string(),
-                user_year: 0, 
-            },
+        let combined_response = register_response_fail {
             status: status { 
                 status: "failed".to_string(), 
                 message: "access denied".to_string(), 

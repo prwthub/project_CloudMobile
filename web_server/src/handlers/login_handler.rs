@@ -5,7 +5,8 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct login_request {
-    user: user,
+    user_id: String,
+    user_password: String,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -21,7 +22,8 @@ async fn post_login(input_data: web::Json<login_request>) -> impl Responder {
     let req = input_data.into_inner();
 
     // request from user
-    let user_id = req.user.user_id;
+    let user_id = req.user_id;
+    let user_password = req.user_password;
 
     // status
     // let status = "";
@@ -44,7 +46,7 @@ async fn post_login(input_data: web::Json<login_request>) -> impl Responder {
             // },
             status: status { 
                 status: "failed".to_string(), 
-                message: "invalid login".to_string(), 
+                message: "Incorrect Login Infomation, Please Try Again.".to_string(), 
                 sessiontime: 0
             }
         };
@@ -55,7 +57,7 @@ async fn post_login(input_data: web::Json<login_request>) -> impl Responder {
         let combined_response = login_response {
             status: status {  
                 status: "successful".to_string(), 
-                message: "welcome , login success".to_string(), 
+                message: "student login successfully.".to_string(), 
                 sessiontime: 1000
             }
         };
