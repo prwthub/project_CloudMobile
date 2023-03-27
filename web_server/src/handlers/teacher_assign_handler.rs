@@ -58,7 +58,7 @@ async fn post_teacher_assign(input_data: web::Json<teacher_assign_request>) -> i
             }
         };
         let response_body = json!(combined_response);
-        HttpResponse::Forbidden().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 401
+        HttpResponse::Forbidden().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 403
     }
     else{
         let combined_response = teacher_assign_response {
