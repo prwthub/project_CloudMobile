@@ -5,7 +5,7 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct studentmanagement_delete_request {
-    master_role: String
+    master_role: String,
     user_id: String,
 }
 
