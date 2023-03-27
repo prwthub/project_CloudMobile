@@ -1,3 +1,5 @@
+use std::vec;
+
 use actix_web::{web, post, get, put, delete, Responder, HttpResponse};
 use serde_json::json;
 use crate::models::{user::*, status::*, subjects::*, master::*};
@@ -13,8 +15,7 @@ pub struct student {
 
 #[derive(Serialize, Deserialize)]
 pub struct studentmanage_response {
-    user1: student,
-    user2: student,
+    user: user,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -39,23 +40,39 @@ async fn get_studentmanagement() -> impl Responder {
         HttpResponse::Forbidden().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 403
     }
     else{
-        let combined_response = studentmanage_response {
-            user1: student { 
+        // let combined_response = studentmanage_response {
+        //     user1: student { 
+        //         user_name: "perawit".to_string(), 
+        //         user_surname: "anansukatham".to_string(), 
+        //         user_id: "6303051613050".to_string(), 
+        //         user_role: "student".to_string(),
+        //     },
+        //     user2: student { 
+        //         user_name: "somchai".to_string(), 
+        //         user_surname: "jaidee".to_string(), 
+        //         user_id: "6303051613051".to_string(), 
+        //         user_role: "student".to_string(),
+        //     },
+            
+        // };
+        let userlist = vec![
+            student {
                 user_name: "perawit".to_string(), 
                 user_surname: "anansukatham".to_string(), 
                 user_id: "6303051613050".to_string(), 
                 user_role: "student".to_string(),
             },
-            user2: student { 
+            student {
                 user_name: "somchai".to_string(), 
                 user_surname: "jaidee".to_string(), 
                 user_id: "6303051613051".to_string(), 
                 user_role: "student".to_string(),
-            },
-            
-        };
-        let response_body = json!(combined_response);
-        HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
+            }
+        ];
+        let user_response = json!(userlist);
+        HttpResponse::Ok().json(user_response)
+        //let response_body = json!(combined_response);
+        //HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
     
     }
     
