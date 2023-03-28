@@ -19,7 +19,7 @@ pub struct grade_response_fail {
 // (/grade)
 #[get("/grade")]
 async fn get_grade() -> impl Responder {
-    let sessiontime = 1000;
+    let sessiontime = 0;
     if sessiontime == 0 {
         let combined_response = grade_response_fail {
             status: status { 
@@ -29,7 +29,7 @@ async fn get_grade() -> impl Responder {
             }
         };
         let response_body = json!(combined_response);
-        HttpResponse::Forbidden().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 403
+        HttpResponse::Unauthorized().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 401
     }
     else{
         let combined_response = grade_response {
@@ -57,7 +57,7 @@ async fn get_grade() -> impl Responder {
             }
         };
         let response_body = json!(combined_response);
-        HttpResponse::Created().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
+        HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 200
     
     }
 }

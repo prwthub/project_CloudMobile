@@ -43,6 +43,6 @@ async fn del_studentmanagement_delete(input_data: web::Json<studentmanagement_de
             }
         };
         let response_body = json!(combined_response);
-        HttpResponse::Created().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
+        HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 200
     }
 }

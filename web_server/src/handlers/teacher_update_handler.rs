@@ -79,6 +79,6 @@ async fn put_teacher_update(input_data: web::Json<teacher_update_request>) -> im
             },
         };
         let response_body = json!(combined_response);
-        HttpResponse::Created().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 201
+        HttpResponse::Ok().json(response_body) // ถ้าตัวนี้จะเป็น Status Code 200
     }
 }
