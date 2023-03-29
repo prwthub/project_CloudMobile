@@ -45,7 +45,7 @@ async fn put_studentmanagement_update(input_data: web::Json<studentmanagement_up
     let user_status = req.user_status;
     let user_year = req.user_year;
 
-    if master_role != "teacher"{
+    if master_role != "admin"{
         let combined_response = studentmanagement_update_response_fail {
             status: status { 
                 status: "failed".to_string(), 
